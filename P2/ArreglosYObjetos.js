@@ -1,14 +1,26 @@
+/**
+ * Arreglo de numeros
+ */
 const numeros = [1,2,3,4,5];
 
+/**
+ * Arreglo de los nuemeros en el arreglo de numeros pero multiplicados por 2 usando Map
+ */
 const dobles = numeros.map(n => n*2);
 
 console.log(numeros);
 console.log(dobles);
 
+/**
+ * Arreglo de elementos de tipo etiqueta para una pagina en HTML
+ */
 const elementosLista = numeros.map(n=> `<li>Numero: ${n}</li>`)
 
 console.log(elementosLista.join(""))
 
+/**
+ * Objeto JSON que contiene atributos y una funcion que es parte de los mismos 
+ */
 const usuario = {
     nombre: "Ramses Norberto",
     edad: 20,
@@ -26,6 +38,11 @@ const usuario = {
 
 let x = 18;
 
+/**
+ * Funcion de puerta que muestra un mensaje diferente dependiendo de la edad que sea ingresada
+ * @param {*} x 
+ * @returns 
+ */
 function puerta(x){
 
     if(x => 18 && x < 40){
@@ -44,6 +61,9 @@ function puerta(x){
 
 let dia = 1;
 
+/**
+ * Switch que muestra el dia de la semana dependiendo del numero que contenga la variable 'dia'
+ */
 switch(dia){
     case 1: console.log("Lunes"); break;
     case 2: console.log("Martes"); break;
